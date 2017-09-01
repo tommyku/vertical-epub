@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="PrimaryID">
+
+
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>Vertical EPUB demo</dc:title>
+    <dc:language>zh-Hant</dc:language>
+    <dc:identifier id="PrimaryID" opf:scheme="URI">https:/blog.tommyku.com/</dc:identifier>
+    <dc:description>Demo file for an EPUB in vertical layout</dc:description>
+    <dc:creator opf:role="aut">Tommy Ku</dc:creator>
+	</metadata>
+
+
+	<manifest>
+    <item id="section-one" href="./Text/Section001.xhtml" media-type="application/xhtml+xml" />
+    <item id="ncx" href="./toc.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="stylesheet" href="./Style/style.css"  media-type="text/css" />
+  </manifest>
+
+
+	<spine toc="ncx" page-progression-direction="rtl">
+    <itemref idref="section-one" linear="yes" />
+	</spine>
+
+
+	<guide>
+    <reference type="text" title="Section One" href="./Text/Section001.xhtml" />
+	</guide>
+
+
+</package>

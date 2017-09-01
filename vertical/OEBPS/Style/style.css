@@ -1,0 +1,5 @@
+@charset "utf-8";
+html {
+  -epub-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+}
